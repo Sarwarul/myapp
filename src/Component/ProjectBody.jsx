@@ -4,9 +4,9 @@ import Card from "./Card";
 function ProjectBody(){
 return(
   <div className="details">
-    {ProjectDetails.map((project)=>{
-        return <Card{...project.ProjectName} key={project.id}/>;
-    })}
+    {ProjectDetails.map((project)=>
+        <Card project={project} key={project.id}/>
+    )}
   </div>
 );
 }
