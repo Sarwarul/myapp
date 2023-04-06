@@ -1,10 +1,9 @@
 import React from "react";
-const Card=({ProjectName,
-    ProjectDescription})=> {
+const Card=({project})=> {
     return (
      <div className="card">
-        <h2>{ProjectName}</h2>
-        <h2>{ProjectDescription}</h2>
+        <h2>{project.ProjectName}</h2>
+        <h2>{project.ProjectDescription}</h2>
      </div>
     );
 }
