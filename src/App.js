@@ -6,11 +6,6 @@ import Header from "./Component/Header";
 import { Route, Routes,Link } from "react-router-dom";
 import ProjectBody from "./Component/ProjectBody";
 
-
-
-
-
-
 function App() {
   return (
     <div className="App">
@@ -26,17 +21,12 @@ function App() {
     
       <Routes>
       <Route path="/" element={<Body/>}/>
-      {/* <Route path="/header" element={<Header/>}/> */}
+      <Route path="/header" element={<Header/>}/>
       <Route path="/aboutus" element={<About/>}/>
       <Route path="/project" element={<ProjectBody/>}/>
-      
       </Routes>
 
       <Footer/>
-
-      
-
-      
     </div>
   );
 }
